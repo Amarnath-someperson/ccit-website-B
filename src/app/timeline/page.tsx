@@ -32,7 +32,7 @@ export default function Timeline() {
     const availableYears = Int16Array.from({length: 31}, (_, index) => 31 - index);
 
     const handleClick = () => {
-        gsap.to('.hero-title', { rotation: gsap.getProperty('.hero-title', 'rotation') + 180 });
+        gsap.to('.hero-title', { rotation: gsap.getProperty('.hero-title', 'rotation') as number + 180 });
 
     }
 
